@@ -1,0 +1,5 @@
+/// @description Insert description here
+// You can write your code in this editor
+sprite_index = sp_casual;
+global.game_state = "casual";
+room_goto(Lev1);
