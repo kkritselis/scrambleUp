@@ -1,3 +1,5 @@
+/// @description Insert description here
+// You can write your code in this editor
 // In the Create Event of obj_level_controller or any appropriate object
 var four_letter_struct = variable_struct_get(global.wordObj, 4); // Safely access the struct "4"
 

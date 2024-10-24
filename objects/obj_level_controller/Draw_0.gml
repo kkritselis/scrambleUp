@@ -20,18 +20,24 @@ if (four_letter_struct != undefined && is_struct(four_letter_struct)) {
             // Loop through each letter in the selected word (start from 1 for string_char_at)
             for (var i = 1; i <= string_length(selected_word); i++) {
                 var letter = string_char_at(selected_word, i);  // Get each letter
-                
+				
                 // Convert the letter to uppercase for sprite index calculation
                 var uppercase_letter = string_upper(letter);
-
+				
                 // Find the corresponding frame in your sprite sheet for the letter
                 var frame_index = ord(uppercase_letter) - ord("A");
-
+				
                 // Ensure the frame index is valid and draw the sprite
-                if (frame_index >= 1 && frame_index <= 26) {
+                if (frame_index >= 0 && frame_index <= 26) {
                     var x_pos = base_x + ((i - 1) * block_size);  // Position each block
                     var y_pos = base_y;
-                    draw_sprite(spr_letters, frame_index, x_pos, y_pos);
+                    // draw_sprite(spr_letters, frame_index, x_pos, y_pos);
+					// Create an instance of the letter object in the 'blocks_and_letters' layer
+    var letter_instance = instance_create_layer(x_pos, y_pos, "blocks_and_letters", obj_letters);
+	letter_instance.frame_index = frame_index;
+    // Set the sprite and frame for the letter instance
+    letter_instance.sprite_index = spr_letters;   // Set the sprite for the letter
+    letter_instance.image_index = frame_index;    // Set the correct frame (based on the letter)
                 }
             }
         }

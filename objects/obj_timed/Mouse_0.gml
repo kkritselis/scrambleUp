@@ -2,4 +2,4 @@
 // You can write your code in this editor
 sprite_index = sp_timed;
 global.game_state = "timed";
-room_goto(Lev1);
+room_goto(Game);
