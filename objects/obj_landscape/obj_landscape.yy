@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_landscape",
-    "path":"sprites/sp_landscape/sp_landscape.yy",
+    "name":"spr_landscape",
+    "path":"sprites/spr_landscape/spr_landscape.yy",
   },
   "spriteMaskId":null,
   "visible":true,

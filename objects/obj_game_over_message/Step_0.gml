@@ -1,0 +1,1 @@
+alpha = min(alpha + 0.05, 1);

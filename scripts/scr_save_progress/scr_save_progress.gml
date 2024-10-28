@@ -18,5 +18,5 @@ function gameOver() {
     saveProgress();  // Save the progress when the game ends
     // Show a simple alert or message to the player
     show_message("Game Over! Returning to menu...");
-    room_goto(Menu);  // Return to the menu
+    room_goto(rm_menu);  // Return to the menu
 }

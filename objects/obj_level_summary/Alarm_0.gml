@@ -1,0 +1,1 @@
+room_goto_next(); // or initialize_next_level() if you prefer

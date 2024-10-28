@@ -7,12 +7,14 @@ draw_set_valign(fa_top);
 
 if (global.game_state == "timed") {
     draw_self();  // Draw the object if the state is "timed"
+	
+	var t = "";
+	t+= string(t_min);
+	t+= ":";
+	if t_sec > 9 { t+= ""+string(t_sec)};
+	if t_sec < 10 { t+= "0"+string(t_sec)};
+
+	draw_text(1480,113,t)
 }
 
-var t = "";
-t+= string(t_min);
-t+= ":";
-if t_sec > 9 { t+= ""+string(t_sec)};
-if t_sec < 10 { t+= "0"+string(t_sec)};
-
-draw_text(1480,113,t)
+draw_text(1860, 113, global.current_score);

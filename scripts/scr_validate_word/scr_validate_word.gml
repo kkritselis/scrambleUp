@@ -1,11 +1,13 @@
 function validateWord(word_string) {
     if (variable_struct_exists(global.wordArray, word_string)) {
-        if (global.wordArray[word_string] == 0) {
-            return true;  // Word is valid and has not been used yet
+        var value = global.wordArray[@ word_string];
+        if (value == 0) {
+            return false;
         } else {
-            return "used";  // Word is valid but already used
+            return true;
         }
     } else {
         return false;  // Word is not valid
     }
 }
+

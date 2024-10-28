@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_pyramid",
-    "path":"sprites/sp_pyramid/sp_pyramid.yy",
+    "name":"spr_pyramid",
+    "path":"sprites/spr_pyramid/spr_pyramid.yy",
   },
   "spriteMaskId":null,
   "visible":true,

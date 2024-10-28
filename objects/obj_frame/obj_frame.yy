@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"foreground",
-    "path":"sprites/foreground/foreground.yy",
+    "name":"spr_foreground",
+    "path":"sprites/spr_foreground/spr_foreground.yy",
   },
   "spriteMaskId":null,
   "visible":true,

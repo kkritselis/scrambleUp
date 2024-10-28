@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"eyes",
-    "path":"sprites/eyes/eyes.yy",
+    "name":"spr_eyes",
+    "path":"sprites/spr_eyes/spr_eyes.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,6 +1,6 @@
 // Access the "4" key in global.wordObj
-var four_letter_struct = variable_struct_get(global.wordObj, 4);
-
+var four_letter_struct = variable_struct_get(global.wordOrder, 4);
+//ow_debug_message(four_letter_struct);
 // Check if the four-letter struct exists and is valid
 if (four_letter_struct != undefined && is_struct(four_letter_struct)) {
     
@@ -33,11 +33,11 @@ if (four_letter_struct != undefined && is_struct(four_letter_struct)) {
                     var y_pos = base_y;
                     // draw_sprite(spr_letters, frame_index, x_pos, y_pos);
 					// Create an instance of the letter object in the 'blocks_and_letters' layer
-    var letter_instance = instance_create_layer(x_pos, y_pos, "blocks_and_letters", obj_letters);
-	letter_instance.frame_index = frame_index;
-    // Set the sprite and frame for the letter instance
-    letter_instance.sprite_index = spr_letters;   // Set the sprite for the letter
-    letter_instance.image_index = frame_index;    // Set the correct frame (based on the letter)
+					var letter_instance = instance_create_layer(x_pos, y_pos, "blocks_and_letters", obj_letters);
+					letter_instance.frame_index = frame_index;
+					// Set the sprite and frame for the letter instance
+					letter_instance.sprite_index = spr_letters;   // Set the sprite for the letter
+					letter_instance.image_index = frame_index;    // Set the correct frame (based on the letter)
                 }
             }
         }
