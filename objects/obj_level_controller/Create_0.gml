@@ -1,1 +1,1 @@
-scr_choose_word(4);
+// scr_choose_word(4);
