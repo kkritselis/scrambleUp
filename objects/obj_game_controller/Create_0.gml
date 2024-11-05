@@ -67,14 +67,14 @@
 // timer_active = false;
 // timer_format = "";
 
-// // Scoring variables
-// global.current_score = 0;
-// level_bonus = 1000;
-// time_bonus = 100;
-// word_base_points = 100;
-// combo_multiplier = 1;
-// last_word_time = get_timer() / 1000000;
-// combo_timeout = 5;
+ // Scoring variables
+ global.current_score = 0;
+ level_bonus = 1000;
+ time_bonus = 100;
+ word_base_points = 100;
+ combo_multiplier = 1;
+ last_word_time = get_timer() / 1000000;
+ combo_timeout = 5;
 
 // max_level = 7; // Add this to define maximum level
 
