@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_black",
-    "path":"sprites/sp_black/sp_black.yy",
+    "name":"spr_black",
+    "path":"sprites/spr_black/spr_black.yy",
   },
   "spriteMaskId":null,
   "visible":true,

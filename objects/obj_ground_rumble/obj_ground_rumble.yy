@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_ground_rumble",
-    "path":"sprites/sp_ground_rumble/sp_ground_rumble.yy",
+    "name":"spr_ground_rumble",
+    "path":"sprites/spr_ground_rumble/spr_ground_rumble.yy",
   },
   "spriteMaskId":null,
   "visible":true,

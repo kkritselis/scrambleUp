@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"glyph",
-    "path":"sprites/glyph/glyph.yy",
+    "name":"spr_glyph",
+    "path":"sprites/spr_glyph/spr_glyph.yy",
   },
   "spriteMaskId":null,
   "visible":true,

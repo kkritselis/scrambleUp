@@ -32,9 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_timer_display",
-    "path":"sprites/sp_timer_display/sp_timer_display.yy",
+    "name":"spr_timer_display",
+    "path":"sprites/spr_timer_display/spr_timer_display.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

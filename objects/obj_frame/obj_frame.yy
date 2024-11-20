@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_frame",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_frame",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"foreground",
-    "path":"sprites/foreground/foreground.yy",
+    "name":"spr_foreground",
+    "path":"sprites/spr_foreground/spr_foreground.yy",
   },
   "spriteMaskId":null,
   "visible":true,

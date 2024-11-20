@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"loading",
-    "path":"sprites/loading/loading.yy",
+    "name":"spr_loading",
+    "path":"sprites/spr_loading/spr_loading.yy",
   },
   "spriteMaskId":null,
   "visible":true,

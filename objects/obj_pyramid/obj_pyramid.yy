@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_pyramid",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_pyramid",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_pyramid",
-    "path":"sprites/sp_pyramid/sp_pyramid.yy",
+    "name":"spr_pyramid",
+    "path":"sprites/spr_pyramid/spr_pyramid.yy",
   },
   "spriteMaskId":null,
   "visible":true,

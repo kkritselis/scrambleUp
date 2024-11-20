@@ -1,51 +1,81 @@
-/// @description Insert description here
-// You can write your code in this editor
-// Initialize the global game state
-global.game_state = "menu";  // Default state (e.g., main menu)
+// // obj_game_controller Create Event
+// show_debug_message("Starting Game Controller Creation");
 
-// Initialize other global variables if needed
-global.player_score = 0;
+// // Check for existing instance first
+// if (instance_number(obj_game_controller) > 1) {
+//     show_debug_message("Duplicate controller found - destroying this instance");
+//     instance_destroy();
+//     exit;
+// }
 
-/// @function load_csv(filename)
-/// @description Loads and parses a CSV file into a 2D array.
-/// @param filename The path to the CSV file (e.g., "datafiles/1.csv").
-function load_csv(filename) {
-    // Open the file for reading
-    var file = file_text_open_read(filename);
-    var result = [];
-    
-    // Ensure the file was opened successfully
-    if (file != -1) {
-        // Loop through the file and read each line
-        while (!file_text_eof(file)) {
-            var line = file_text_read_string(file);  // Read a line of the CSV
-            file_text_readln(file);  // Move to the next line
-            
-            // Split the line into individual elements by commas
-            var elements = string_split(line, ",");
-            
-            // Add the parsed elements to the result array
-            array_push(result, elements);
-        }
+// // Flag to track if we've initialized
+// initialized = false;
 
-        // Close the file
-        file_text_close(file);
-    } else {
-        show_debug_message("Error: Unable to open the file!");
-    }
-    
-    return result;  // Return the parsed data as a 2D array
-}
+// // Initialize all basic variables
+// persistent = true;
+// game_active = false;
+// timer_active = false;
 
-// Load the CSV file into a 2D array
-var words3 = load_csv("datafiles/3.csv");
+// // Create fresh data structures
+// try {
+//     active_words = ds_map_create();
+//     required_words = ds_map_create();
+//     active_blocks = ds_list_create();
+//     initialized = true;
+//     show_debug_message("Data structures created successfully");
+// } catch(error) {
+//     show_debug_message("Error creating data structures: " + string(error));
+//     exit;
+// }
 
-// Check the contents of the first row/column
-if (array_length(words3) > 0) {
-    show_debug_message("First row, first element: " + words1[0][0]);
-} 
+// // Game mode enum and variable
+// enum GameMode {
+//     CASUAL,
+//     TIMED
+// }
+// game_mode = GameMode.CASUAL;
 
+// // Initialize game position arrays
+// block_x_positions_by_row_length = {
+//     len4: [375, 465, 555, 645],
+//     len5: [330, 420, 510, 600, 690],
+//     len6: [285, 375, 465, 555, 645, 735],
+//     len7: [240, 330, 420, 510, 600, 690, 780],
+//     len8: [195, 285, 375, 465, 555, 645, 735, 825],
+//     len9: [150, 240, 330, 420, 510, 600, 690, 780, 870],
+//     len10: [195, 285, 375, 465, 555, 645, 735, 825, 915, 1005]
+// };
 
+// block_y_position_by_level = {
+//     lev1: [375,465,555,645],
+//     lev2: [330,420,510,600,690],
+//     lev3: [285,375,465,555,645,735],
+//     lev4: [240,330,420,510,600,690,780],
+//     lev5: [195,285,375,465,555,645,735,825],
+//     lev6: [150,240,330,420,510,600,690,780,870],
+//     lev7: [195,285,375,465,555,645,735,825,915,1005]
+// };
 
-var _file = file_text_open_write("temp");
-file_text_close(_file);
+// // Game state variables
+// current_level = 1;
+// current_row_length = 4;
+// current_word = "";
+// active_blocks = ds_list_create();
+
+// // Timer variables - initialize but don't start
+// time_remaining = 180;
+// timer_active = false;
+// timer_format = "";
+
+ // Scoring variables
+ global.current_score = 0;
+ level_bonus = 1000;
+ time_bonus = 100;
+ word_base_points = 100;
+ combo_multiplier = 1;
+ last_word_time = get_timer() / 1000000;
+ combo_timeout = 5;
+
+// max_level = 7; // Add this to define maximum level
+
+// show_debug_message("Game Controller Creation Complete");

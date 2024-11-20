@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bubble",
-    "path":"sprites/bubble/bubble.yy",
+    "name":"spr_bubble",
+    "path":"sprites/spr_bubble/spr_bubble.yy",
   },
   "spriteMaskId":null,
   "visible":true,

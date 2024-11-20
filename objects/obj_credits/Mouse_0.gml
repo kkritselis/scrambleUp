@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 sprite_index = sp_credits;
-room_goto(Credits);
+room_goto(rm_credits);

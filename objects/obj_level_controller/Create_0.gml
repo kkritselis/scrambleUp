@@ -1,0 +1,1 @@
+// scr_choose_word(4);
